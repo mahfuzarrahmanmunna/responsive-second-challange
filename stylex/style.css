@@ -28,10 +28,13 @@
     cursor: pointer;
 }
 
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.main {
+    padding: 157px;
 }
 /* Banner model */
 .banner-container {
@@ -59,14 +62,49 @@
 .clr {
     color: #ffffff;
 }
+.donate-container {
+    text-align: center;
+}
+.donate-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.donate-btn {
+    padding: 43px 24px;
+    font-family: "Inter", serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(112, 112, 112, 1);
+    border-radius: 5px;
+    margin-left: 22px;
+    border: none;
+    cursor: pointer;
+}
+#donate-id {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+    margin-top: 60px;
+    border: none;
+    text-align: center;
+}
 
-
-
+/* Shared style */
+.primary-head {
+    font-family: "Inter", serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(18, 18, 18, 1);
+    margin-bottom: 20px;
+}
 
 /* Media Quariy for Small Device */
 @media screen and (max-width: 576px) {
     .banner-container {
         flex-direction: column;
+        width: 100%;
     }
     .banner {
         padding: 10px;
@@ -76,6 +114,21 @@
     }
     .poppins-desc {
         font-size: 12px;
+    }
+    .donate-amount {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+    .main {
+        padding: 10px;
+    }
+    .btn5 {
+        grid-column: span 2;
+    }
+    .donate-container {
+
     }
 }
 
